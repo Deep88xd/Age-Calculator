@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h2>Age Calculator</h2>
+        <form id="form" autocomplete="off">
+            <h5>Input Must Be In Number</h5>
+            <div class="row">
+                <div class="col-1">
+                    <label for="date">
+                        Date Of Birth:
+                    </label>
+                </div>
+                <div class="col-2">
+                    <input type="text" maxlength="2" size="2" id="date" placeholder="Date" required />
+                    <input type="text" maxlength="2" size="2" id="month" placeholder="Month" autocomplete="on"
+                        required />
+                    <input type="text" maxlength="4" size="4" id="year" placeholder="Year" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="date2">
+                        Today's Date:
+                    </label>
+                </div>
+
+                <div class="col-2">
+                    <input type="text" maxlength="2" size="2" id="date2" placeholder="Date" />
+                    <input type="text" maxlength="2" size="2" id="month2" placeholder="Month" />
+                    <input type="text" maxlength="4" size="4" id="year2" placeholder="Year" />
+                </div>
+            </div>
+            <br>
+            <button class="calbtn draw-border" id="calbtn">Calculate</button>
+            <br />
+            <span id="age"></span><br>
+            <span id="months"></span><br>
+            <span id="days"></span><br>
+        </form>
+        <div>
+            <h3 style="text-align:left">ABOUT AGE CALCULATOR</h3>
+        </div>
+        <hr>
+        <div>
+
+            <p style="font-weight: bold;">Age calculator is an online tool with which you can find out your age using
+                your date of birth and the current date. The tool helps to find out the difference in time between two
+                dates. The result is displayed in years, months and days. The results are also not affected by the time
+                zone of a person since the tool just tells you the difference in time. The age calculator is based on
+                the common age system, therefore it can be used by everyone.</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
